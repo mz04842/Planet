@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String planetName = textView.getText().toString();
                 boolean isGas = checkbox.isChecked();
-                String s_numMoons= spinner.getSelectedItem().toString();
+                String s_numMoons= spinner.getSelectedItem().toString(); //add a comment
                 int moons = Integer.parseInt(s_numMoons);
                 Planet planet = new Planet(moons, isGas, planetName);
                 Intent intent = new Intent(MainActivity.this, ShowPlanetActivity.class);
